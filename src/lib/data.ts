@@ -32,3 +32,24 @@ export const SidebarData = [
         icon: Settings,
     },
 ]
+
+export const OnboardingSteps = [
+    {
+        id : 1,
+        title: 'Create a Webinar',
+        link: '/webinar/create',
+        complete : false,
+    },
+    {
+        id : 2,
+        title: 'Get Leads',
+        link: '/pipelines/create',
+        complete : false,
+    },
+    {
+        id : 3,
+        title: 'Conversion Status',
+        link: '/lead/create',
+        complete : false,
+    },
+];

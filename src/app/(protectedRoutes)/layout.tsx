@@ -1,4 +1,5 @@
 import { onAuthenticatedUser } from "@/actions/auth";
+import Header from "@/components/ReuseableComponents/LayoutComponents/Header";
 import Sidebar from "@/components/ReuseableComponents/LayoutComponents/Sidebar";
 import { redirect } from "next/navigation";
 import React from "react";
@@ -14,7 +15,8 @@ const Layout = async ({ children }: { children: React.ReactNode }) => {
       {/* Sidebar */}
       <Sidebar />
       {/* Main Content */}
-      <div className="flex flex-col w-full h-screen overflow-auto px-4 scrollbar-hide md:px-2 container mx-auto">
+      <div className="flex flex-col w-full h-screen overflow-auto scrollbar-hide md:px-2  xxl:container xxl:mx-auto  xl:mx-auto">
+        <Header user={userExists.user} />
         {children}
       </div>
     </div>
