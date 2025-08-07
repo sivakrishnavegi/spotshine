@@ -12,7 +12,7 @@ export async function onAuthenticatedUser  ()  {
     }
 
     const prisma = new PrismaClient();
-    const userExists = await prisma.user.findUnique({
+    const userExists = await prisma?.user?.findUnique({
         where : { clerkId: user.id },
     })
 
