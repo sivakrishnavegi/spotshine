@@ -15,7 +15,7 @@ const Layout = async ({ children }: { children: React.ReactNode }) => {
       {/* Sidebar */}
       <Sidebar />
       {/* Main Content */}
-      <div className="flex flex-col w-full h-screen overflow-auto scrollbar-hide md:px-2  xxl:container xxl:mx-auto  xl:mx-auto">
+      <div className="flex flex-col w-full h-screen overflow-auto scrollbar-hide md:px-2 px-4 container mx-auto xl:mx-auto">
         <Header user={userExists.user} />
         {children}
       </div>
