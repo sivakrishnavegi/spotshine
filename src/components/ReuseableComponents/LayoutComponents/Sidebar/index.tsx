@@ -2,7 +2,7 @@
 import {
   Tooltip,
   TooltipProvider,
-  TooltipTrigger,
+  TooltipTrigger,TooltipContent
 } from "@/components/ui/tooltip";
 import { SidebarData } from "@/lib/data";
 import { UserButton } from "@clerk/nextjs";
@@ -38,6 +38,9 @@ const Sidebar = () => {
                       />
                     </Link>
                   </TooltipTrigger>
+                  <TooltipContent side="right">
+                    <p className="text-sm">{item.title}</p>
+                  </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
             ))}
